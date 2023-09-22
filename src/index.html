@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Генератор мемов</title>
+    <link rel="stylesheet" type="text/css" href="./assest/styles/index.css">
+
+</head>
+<body class="body">
+    <div class="main">
+        <div class="canvas__container">
+    <canvas class="canvas" id="canvas"></canvas></div>
+    <div> <input type="file" id="imageLoader" accept="image/*">
+        <div class="container">
+        <label for="textInput">Текст:</label>
+        <input class="textInput" type="text" id="textInput" placeholder="Введите текст">
+        <label for="textSize">Размер текста:</label>
+        <input type="range" id="textSize" min="10" max="100" value="30">
+        <label for="textColor">Цвет:</label>
+        <input type="color" id="textColor" value="#000000"></div>
+        <div class="container">
+        <button class="button" id="addTextButton">Добавить текст</button>
+        <button class="button" id="deleteTextButton">Удалить текст</button>
+        <button class="button" id="saveButton">Сохранить</button></div>
+    </div></div>
+
+    <script src="./js/imageLoader.js"></script>
+    <script src="./js/pazzle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
